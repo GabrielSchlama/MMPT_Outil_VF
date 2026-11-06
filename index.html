@@ -374,7 +374,7 @@ for(const y in REF){const r=REF[y],t=r.cv+r.a+r.d;r.t=t;r.sh=[r.cv/t,r.a/t,r.d/t
 const pl=y=>REF[y].t-REF[y].cv;
 const S={n:0,bon:.5,dur:6,par:0,mon:0,sh:[0,0,0],nat:0,me:0,dek:0};
 const opt={bon:[[0,'0 %'],[.25,'25 %'],[.5,'50 %']],dur:[[4,'4 mois'],[6,'6 mois'],[10,'10 mois']],par:[[0,'0 %'],[.1,'10 %'],[.15,'15 %'],[.2,'20 %']],mon:[[0,'Le même'],[-.1,'− 10 %'],[-.2,'− 20 %']]};
-const SCEN=[{v:{nat:49,me:36000,dek:26000,n:214},m:s=>s.nat===49&&s.me===36000&&(s.dek===26000||s.dek===4000)&&s.n===214},
+const SCEN=[{v:{nat:49,me:36000,dek:26000,n:204},m:s=>s.nat===49&&s.me===36000&&(s.dek===26000||s.dek===4000)&&s.n===204},
             {v:{nat:63,me:20000,dek:10000,n:216},m:s=>s.nat===63&&s.me===20000&&s.dek===10000&&s.n===216}];
 function cvc(s){
  const horsUnitaire=C.mois*(1+s.mon)*s.dur;
